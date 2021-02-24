@@ -124,6 +124,8 @@ footer {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #000;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-link.current {
@@ -156,6 +158,8 @@ footer {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -239,6 +243,8 @@ footer {
   min-width: 136px;
   margin-bottom: 200px;
   margin-top: 30px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Преимущества */
@@ -420,6 +426,9 @@ footer {
   justify-content: center;
   display: flex;
   align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social:hover,
@@ -476,6 +485,9 @@ footer {
   border: 1px solid var(--grey-border);
   border-radius: 4px;
   fill: var(--grey-border);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .costumer-link:hover,
@@ -509,13 +521,6 @@ footer {
   padding-bottom: 94px;
   outline: 1px solid red;
 }
-
-.option-btn:hover,
-.option-btn:focus {
-  background-color: var(--blue);
-  color: #ffffff;
-}
-
 .option-btn {
   font-weight: 500;
   font-size: 16px;
@@ -524,7 +529,18 @@ footer {
   border-radius: 4px;
   border: 1px transparent;
   padding: 6px 22px;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.option-btn:hover,
+.option-btn:focus {
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
 .option-btns > li:not(:last-child) {
   margin-right: 8px;
 }
@@ -540,6 +556,21 @@ footer {
   padding-left: 0;
 }
 
+.portfolio-thumb {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.actions {
+  position: absolute;
+  content: "";
+  display: block;
+
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -550,6 +581,8 @@ footer {
 .flex-element {
   margin-right: 30px;
   margin-bottom: 30px;
+  cursor: pointer;
+  /* position: relative; */
 }
 
 .flex-element:nth-last-child(-n + 3) {
@@ -562,6 +595,8 @@ footer {
 
 .flex-link {
   display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-link:hover,
@@ -617,7 +652,10 @@ footer {
   text-decoration: none;
   margin-top: 9px;
   display: inline-block;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .container-footer {
   width: 1200px;
   padding-left: 15px;
@@ -661,4 +699,6 @@ footer {
 .link-social:hover,
 .link-social:focus {
   background-color: var(--blue);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
