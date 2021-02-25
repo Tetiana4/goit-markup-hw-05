@@ -373,7 +373,14 @@
             
         </div>
     </footer>
+<script>
 
+    const { height: headerSectionHeifht} = document
+    .querySelector(".header-section")
+    .getBoundingClientRect();
+
+    document.body.style.paddingTop = '${headerSectionHeifht}px';
+</script>
 
 </body>
 </html>
