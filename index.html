@@ -378,10 +378,10 @@
                     </a>
                     </li>
                     <li>
-                    <a href="" class="link-social">
+                    <a href="" class="link-social">                
                         <svg class="in" width="20px" height="20px">
                             <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-                        </svg>
+                        </svg>                        
                     </a>
                     </li>                   
                 </ul>    
@@ -402,25 +402,27 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <svg data-modal-close class="modal-svg" width="11px" height="11px">
+            <button class="close-button">
+                <svg data-modal-close class="modal-svg" width="11px" height="11px">
                 <use href="./images/icons.svg/sprite.svg#icon-modal"></use>
             </svg>
+            </button>
             <form class="modal-form">
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-field">
                     <label for="name">Имя</label>
                     <div class="input-thumb">                        
-                        <svg class="icon-form" width="12px" height="12px">
-                            <use href="./images/icons.svg/sprite.svg#icon-name"></use>
-                        </svg>
                         <input type="text" class="input-form" name="name" id="name" /> 
+                        <svg class="icon-form" width="18px" height="18px">
+                            <use href="./images/icons.svg/sprite.svg#icon-name"></use>
+                        </svg>                        
                     </div>                                   
                 </div>
                 <div class="form-field">                    
                     <label for="tel">Телефон</label>
                     <div class="input-thumb">
                         <input type="tel" class="input-form" name="tel" id="tel" />                        
-                        <svg class="icon-form" width="13px" height="13px">
+                        <svg class="icon-form" width="18px" height="18px">
                             <use href="./images/icons.svg/sprite.svg#icon-handset"></use>
                         </svg>
                         
@@ -429,10 +431,10 @@
                 <div class="form-field">
                     <label for="mail">Почта</label>
                     <div class="input-thumb">                       
-                        <svg class="icon-form" width="15px" height="12px">
-                            <use href="./images/icons.svg/sprite.svg#icon-email"></use>
-                        </svg>
                         <input type="email" class="input-form" name="mail" id="mail" />
+                        <svg class="icon-form" width="18px" height="18px">
+                            <use href="./images/icons.svg/sprite.svg#icon-email"></use>
+                        </svg>                       
                     </div>
                 </div>
                 <div class="form-field">
@@ -440,8 +442,13 @@
                 <textarea name="comment" id="comment" placeholder="Введите текст " class="textarea"></textarea>
                 </div>
                 <div class="field-policy">
-                    <input type="checkbox" name="policy" id="policy"/>
-                    <label for="police">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+                    <label class="check">
+                        <input class="check-input" type="checkbox" checked/>
+                        <svg class="icon-check" width="16px" height="15px">
+                            <use href="./imeges/icons.svg/sprite.svg#icon-check"></use>
+                        </svg>
+                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                    </label>
                 </div>
                 <button type="submit">Отправить</button>
 
