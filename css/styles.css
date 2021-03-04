@@ -977,18 +977,18 @@ footer {
   justify-content: center;
 }
 
-.check-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-
 .check-input:checked + .icon-check {
   background-color: var(--blue);
   background-image: url(/images/icons.svg/icon-check.svg);
   background-size: contain;
   border-color: var(--blue);
+}
+
+.check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
 .icon-check {
