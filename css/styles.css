@@ -979,7 +979,7 @@ footer {
 
 .check-input:checked + .icon-check {
   background-color: var(--blue);
-  background-image: url(/images/icons.svg/icon-check.svg);
+  background-image: url(../images/icons.svg/icon-check.svg);
   background-size: contain;
   border-color: var(--blue);
 }
